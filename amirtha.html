@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amy's special day</title>
+    <link rel="icon" href="assets/—Pngtree—cute cat sticker cartoon kitten_9029344.png">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+        </style>
+    <style>
+        *{
+            margin: 0%;
+            border: 0%;
+        }
+        .container{
+            position: relative;
+            width: 100%;
+            height: 100%;
+        }
+        .container img{
+            width: 100%;
+            height: 100%;
+            border-image: fill;
+        }
+        .banner-text{
+            position: absolute;
+            top: 75px;
+            left: 400px;
+            color: black;
+            text-align: center;
+            font-size: 5vw;
+            font-weight: 700;
+           font-family: "Dancing Script", cursive;
+           font-optical-sizing: auto;
+           font-style: normal;
+            transition: transform 0.3s ease;
+
+        }
+        .banner-text:hover{
+             transform: scale(1.1);
+             cursor: pointer;
+        }
+        .date{
+            position: absolute;
+            top: 200px;
+            left: 625px;
+            color: black;
+            text-align: center;
+            font-size: 2vw;
+            font-weight: 600;
+            font-family: "Dancing Script", cursive;
+           font-optical-sizing: auto;
+           font-style: normal;
+            transition: transform 0.3s ease;
+
+        }
+        .date:hover{
+             transform: scale(1.1);
+             cursor: pointer;
+
+        }
+        .first-line{
+            position: absolute;
+            top: 300px;
+            left: 200px;
+            color: black;
+            text-align: center;
+            font-size: 2vw;
+            font-weight: 1200;
+            font-family: "Dancing Script", cursive;
+           font-optical-sizing: auto;
+           font-style: normal;
+
+        }
+        .para{
+            position: absolute;
+            top: 340px;
+            left: 25px;
+            color: black;
+            text-align: center;
+            font-size: 2vw;
+            font-weight: 1200;
+            font-family: "Dancing Script", cursive;
+           font-optical-sizing: auto;
+           font-style: normal;
+        }
+        .end-credits{
+            position: absolute;
+            top: 640px;
+            left: 690px;
+            color: black;
+            text-align: center;
+            font-size: 2vw;
+            font-weight: 1200;
+            font-family: "Dancing Script", cursive;
+           font-optical-sizing: auto;
+           font-style: normal;
+
+        }
+        .wishes{
+            position: absolute;
+            top: 540px;
+            left: 375px;
+            color: black;
+            text-align: center;
+            font-size: 2vw;
+            font-weight: 1200;
+            font-family: "Dancing Script", cursive;
+           font-optical-sizing: auto;
+           font-style: normal;
+        }
+        .twig{
+             position: absolute;
+            top: 250px;
+            left: 1100px;
+            color: black;
+            text-align: center;
+            font-size: 30vw;
+            font-weight: 600;
+            font-family: "Dancing Script", cursive;
+           font-optical-sizing: auto;
+           font-style: normal;
+
+        }
+       .cat{
+         position: absolute;
+            top: 630px;
+            left: 1220px;
+            color: black;
+            text-align: center;
+            font-size: 5vw;
+            font-weight: 600;
+            font-family: "Dancing Script", cursive;
+           font-optical-sizing: auto;
+           font-style: normal;
+       }
+        .hearts{
+            font-size: 23px;
+            font-weight: bold;
+            position:fixed;
+            top:-1vh;
+            transform:translateY(0%);
+            left:0;
+            animation-name:'fall';
+            animation-duration: '3s';
+            animation-timing-function: 'ease-in';
+            animation-iteration-count: 'infinite';
+        }
+        @keyframes fall{
+            to{
+                   transform : translateY(  250%);
+             }
+        }
+        .floating-icon {
+            position:absolute;/* Makes it stay in place while scrolling */
+            top: 20px;
+            left: 80px;
+            width: 300px;
+            height: 300px;
+            z-index: 1000; /* Ensures it stays above other content */
+            border-radius: 50%;
+            justify-content: center;
+            align-items: center;
+            
+            transition: transform 0.3s ease;
+        }
+        .floating-icon:hover {
+            transform: scale(1.1);
+             cursor: pointer;
+        }
+        
+        .floating-icon img {
+            width: 200px;
+            height: 200px;
+            object-fit: contain;
+        }
+        .cat1{
+            position:absolute;/* Makes it stay in place while scrolling */
+            top: 500px;
+            left: 80px;
+            width: 300px;
+            height: 300px;
+            z-index: 1000; /* Ensures it stays above other content */
+            border-radius: 50%;
+            justify-content: center;
+            align-items: center;
+            
+            transition: transform 0.3s ease;
+        }
+        .cat1:hover{
+            transform: scale(1.1);
+             cursor: pointer;
+        }
+        .cat1 img{
+            width: 200px;
+            height: 200px;
+            object-fit: contain;
+        }
+        .december{
+        position:absolute;/* Makes it stay in place while scrolling */
+            top: 150px;
+            right:40px;
+            width: 300px;
+            height: 300px;
+            z-index: 1000; /* Ensures it stays above other content */
+            border-radius: 50%;
+            justify-content: center;
+            align-items: center;
+            
+            transition: transform 0.3s ease;
+
+        }
+        .december:hover{
+            transform: scale(1.1);
+             cursor: pointer;
+        }
+        .december img{
+             width: 270px;
+            height: 200px;
+            object-fit: contain;
+
+        }
+        .evermore{
+            position:absolute;/* Makes it stay in place while scrolling */
+            top: 0650px;
+            right:650px;
+            width: 300px;
+            height: 300px;
+            z-index: 1000; /* Ensures it stays above other content */
+            border-radius: 50%;
+            justify-content: center;
+            align-items: center;
+            
+            transition: transform 0.3s ease;
+
+        }
+        .evermore:hover{
+             transform: scale(1.1);
+             cursor: pointer;
+        }
+        .evermore img{
+             width: 270px;
+            height: 200px;
+            object-fit: contain;
+        }
+        .red{
+            position:absolute;/* Makes it stay in place while scrolling */
+            top: 900px;
+            left: 40px;
+            width: 300px;
+            height: 300px;
+            z-index: 1000; /* Ensures it stays above other content */
+            border-radius: 50%;
+            justify-content: center;
+            align-items: center;
+            
+            transition: transform 0.3s ease;
+            
+        }
+        .red:hover{
+             transform: scale(1.1);
+             cursor: pointer;
+        }
+        .red img{ width: 170px;
+            height: 100px;
+            object-fit: contain;
+
+        }
+        .cat2{
+             position:absolute;/* Makes it stay in place while scrolling */
+            top: 1000px;
+            left:210px;
+            width: 100px;
+            height: 100px;
+            z-index: 1000; /* Ensures it stays above other content */
+            border-radius: 50%;
+            justify-content: center;
+            align-items: center;
+            
+            transition: transform 0.3s ease;
+
+        }
+        .cat2:hover{
+            transform: scale(1.1);
+             cursor: pointer;
+        }
+        .cat2 img{
+            width: 200px;
+            height: 250px;
+            object-fit: contain;
+            
+        }
+        .cat3{
+             position:absolute;/* Makes it stay in place while scrolling */
+            top: 1000px;
+            right:080px;
+            width: 300px;
+            height: 300px;
+            z-index: 1000; /* Ensures it stays above other content */
+            border-radius: 50%;
+            justify-content: center;
+            align-items: center;
+            
+            transition: transform 0.3s ease;
+
+        }
+        .cat3:hover{
+            transform: scale(1.1);
+             cursor: pointer;
+        }
+        .cat3 img{
+            width: 200px;
+            height: 250px;
+            object-fit: contain;
+            
+        }
+        .erastour{ 
+             position:absolute;/* Makes it stay in place while scrolling */
+            top: 800px;
+            right:030px;
+            width: 300px;
+            height: 300px;
+            z-index: 1000; /* Ensures it stays above other content */
+            border-radius: 50%;
+            justify-content: center;
+            align-items: center;
+            
+            transition: transform 0.3s ease;
+        }
+        .erastour:hover{
+             transform: scale(1.1);
+             cursor: pointer;
+        }
+        .erastour img{
+             width: 200px;
+            height: 250px;
+            object-fit: contain;
+        }
+        .poets{
+            position:absolute;/* Makes it stay in place while scrolling */
+            top: 1200px;
+            right:650px;
+            width: 300px;
+            height: 300px;
+            z-index: 1000; /* Ensures it stays above other content */
+            border-radius: 50%;
+            justify-content: center;
+            align-items: center;
+            
+            transition: transform 0.3s ease;
+        }
+        .poets:hover{
+             transform: scale(1.1);
+             cursor: pointer;
+        }
+        .poets img{
+             width: 370px;
+            height: 300px;
+            object-fit: contain;
+        }
+        .flower{ position:absolute;/* Makes it stay in place while scrolling */
+            top:1250px;
+            left:150px;
+            width: 300px;
+            height: 300px;
+            z-index: 1000; /* Ensures it stays above other content */
+            border-radius: 50%;
+            justify-content: center;
+            align-items: center;
+            
+            transition: transform 0.3s ease;
+        }
+        .flower:hover{
+            transform: scale(1.1);
+             cursor: pointer;
+        }
+        .flower img{
+            width: 200px;
+            height: 200px;
+            object-fit: contain;
+        }
+        .flower2{ position:absolute;/* Makes it stay in place while scrolling */
+            top:1230px;
+            right:30px;
+            width: 300px;
+            height: 300px;
+            z-index: 1000; /* Ensures it stays above other content */
+            border-radius: 50%;
+            justify-content: center;
+            align-items: center;
+            
+            transition: transform 0.3s ease;
+        }
+   .flower2:hover{
+            transform: scale(1.1);
+             cursor: pointer;
+        }
+        .flower2 img{
+            width: 200px;
+            height: 200px;
+            object-fit: contain;
+            transform: scaleX(-1);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+<img src="Cute-Aesthetic-Pink-Wallpaper-HD-Free-download.jpg">
+<div class="floating-icon">
+        
+        <img src="1989_album_logo-min.png" alt="Floating Png">
+    </div>
+    <div class="cat1">
+        
+        <img src="assets/—Pngtree—cute cat sticker cartoon kitten_9029344.png" alt="Floating Png">
+    </div>
+    <div class="december">
+        
+        <img src="assets/Back_to_December_Taylor_Swift_full.png"alt="Floating Png">
+    </div>
+     <div class="evermore">
+        <img src="assets/Evermore-wordmark.svg" alt="Floating Png">
+        
+    </div>
+    <div class="red">
+        
+        <img src="assets/Taylor_Swift_-_Red_(album)_white.png" alt="Floating Png">
+    </div>
+    <div class="cat2">
+        
+        <img src="assets/c3be2948af5eafe32b750b0cdbee90f2.png" alt="Floating Png">
+    </div>
+    <div class="cat3">
+        
+        <img src="assets/fcc9877958a656422cc0faf14fe8833b.png" alt="Floating Png">
+    </div>
+    <div class="erastour">
+        <img src="assets/The_Eras_Tour_Film_Alternative_Logo.png" alt="Floating Png">
+    </div>
+    <div class="poets">
+        <img src="assets/The_Tortured_Poets_Department_Logo.png" alt="Floating Png">
+    </div>
+    <div class="flower">
+        <img src="OLBKWT0.jpg" alt="Floating Png">
+    </div>
+     <div class="flower2">
+        <img src="OLBKWT0.jpg" alt="Floating Png">
+    </div>
+<div class="banner-text">Happy birthday Amyy!!💐💗</div> 
+<div class="date">🗓️ 12 July, 2025</div> 
+<div class="first-line">Okay, so… this isnt a poem,
+But I wanted to try!
+I don’t know the right words —
+never have.✨ </div>
+<div class="para">I’m not great with fancy words, but I just wanted to say —
+    you genuinely deserve all the good things today.
+    I hope it’s full of the kind of moments that make you smile for no reason,
+    and people who make you feel appreciated —
+    because you really are.
+    
+    I don’t want to make this weird or too much,but I’ve always thought there’s something quietly special about you.
+    And yeah, I just wanted to say I’m really glad I know you,
+    even if it’s just a little.😊</div>
+    <div class="wishes">Wish you a Happiest birthday and a day filled with Joy and Laughter💖 </div>
+    <div class="end-credits">~ P 🦥</div>
+    <div class="twig">𓆱</div>
+    <div class="cat">🐈 ྀི</div>
+   <center>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/jTWUBG78J_U?si=44NlW_1xzqe4GRyj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> 
+    </center>
+</div>  
+</body>
+<script>
+        function hearts(){
+            const container = document.querySelector('.container');
+            const creat = document.createElement('div');
+            creat.classList.add('hearts');
+           creat.innerHTML ='🩷';
+           creat.style.left = Math.random() * 100 + 'vw';
+           container.appendChild(creat)
+            
+        }
+        setInterval(hearts,100);
+    </script>
+</html>
+
+
